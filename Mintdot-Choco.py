@@ -3,7 +3,7 @@ from discord.ext import commands
 from discord.ext.commands import Bot
 import asyncio
 
-token = 'NDUzNDM5NTQwMTg3ODg5Njg1.Dfe6Bg.AB8nqe01dXqmQCU2cHbN1XfRbNs'
+token = 'NDUzNDM5NTQwMTg3ODg5Njg1.DfpM0w.dBIzKm-zBl--s8rPGRr2T6AeNU8'
 
 bot = commands.Bot(command_prefix='-co ')
 

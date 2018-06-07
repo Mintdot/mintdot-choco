@@ -11,7 +11,7 @@ bot = commands.Bot(command_prefix='-co ')
 async def on_ready():
     print("CHOCO BOT IS READY")
     print("BOT NAME: " + bot.user.name)
-    print("BOT ID: " + bot.user.id)
+    print("BOT ID: " + str(bot.user.id))
     await bot.change_presence(game=discord.Game(name="-co co"))
 
 @bot.command(pass_context=True)

@@ -12,7 +12,9 @@ async def on_ready():
     print("CHOCO BOT IS READY")
     print("BOT NAME: " + bot.user.name)
     print("BOT ID: " + str(bot.user.id))
-    await bot.change_presence(game=discord.Game(name="-co co"))
+    activity = discord.Game(name="-co co")
+    await bot.change_presence(status=discord.Status.idle, activity=activity)
+#     await bot.change_presence(game=discord.Game(name="-co co"))
 
 @bot.command(pass_context=True)
 async def co(ctx):

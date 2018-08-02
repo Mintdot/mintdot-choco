@@ -26,7 +26,7 @@ async def co_default(ctx):
     embed.set_footer(text="co is best dog", icon_url="https://raw.githubusercontent.com/Mintdot/Mintdot-Choco/master/img/co.png")
     await ctx.send(embed=embed)
 
-@bot.command(pass_context=True, name=co+' 손!')
+@bot.command(pass_context=True, name='초코 손!')
 async def co_hand(ctx, *, args):
     await ctx.send('왈!')
 

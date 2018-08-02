@@ -19,6 +19,7 @@ async def on_ready():
 @bot.command(pass_context=True, name="초코")
 async def co(ctx):
     """
+    하루에 한 번쯤은 초코를 불러줘야 하지 않겠는가?
     """
     embed = discord.Embed(title="Let's co's time.")
     embed.set_author(name="1DAY 1CO", icon_url="https://raw.githubusercontent.com/Mintdot/Mintdot-Choco/master/img/co.png")
@@ -28,10 +29,16 @@ async def co(ctx):
 
 @bot.command(pass_context=True, name="메이플왜해요")
 async def maple(ctx):
+    """
+    트위치/밈
+    """
     await ctx.send("아니 그거 재밌다니깐요?")
 
 @bot.command(pass_context=True, name="오버워치왜해요")
 async def overwatch(ctx):
+    """
+    트위치/밈
+    """
     await ctx.send("아니 그거 재밌다니깐요?")
 
 bot.run(token)

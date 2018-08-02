@@ -27,7 +27,7 @@ async def co_default(ctx):
     await ctx.send(embed=embed)
 
 @bot.command(pass_context=True, name=co+' 손!')
-async def co_hand(ctx):
+async def co_hand(ctx, args, *):
     await ctx.send('왈!')
 
 @bot.command(pass_context=True, name=co+' 발!')

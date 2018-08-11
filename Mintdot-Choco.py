@@ -27,6 +27,13 @@ async def co(ctx):
     embed.set_footer(text="co is best dog", icon_url="https://raw.githubusercontent.com/Mintdot/Mintdot-Choco/master/img/co.png")
     await ctx.send(embed=embed)
 
+@bot.command(pass_context=True, name="좆망겜왜해요")
+async def wtf(ctx):
+    """
+    트위치/밈
+    """
+    await ctx.send("아니 그거 재밌다니깐요?")
+
 @bot.command(pass_context=True, name="메이플왜해요")
 async def maple(ctx):
     """
@@ -40,5 +47,12 @@ async def overwatch(ctx):
     트위치/밈
     """
     await ctx.send("아니 그거 재밌다니깐요?")
+
+@bot.command(pass_context=True, name="와우왜해요")
+async def wow(ctx):
+    """
+    트위치/밈
+    """
+    await ctx.send("록타 오가르!")
 
 bot.run(token)
